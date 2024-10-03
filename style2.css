@@ -1,0 +1,157 @@
+body
+{
+    height: 100vh;
+    background: linear-gradient(rgb(230, 209, 209), rgb(219, 123, 137));
+}
+.container
+{
+   width:50%;
+   margin: auto;
+   background-color: white;
+   text-align: center;
+   animation-name: slide-down, fade-in;
+   animation-timing-function: ease-in-out;
+   animation-duration: 1s;
+   animation-fill-mode: forwards;
+   transition: opasity 2s;
+}
+h2
+{
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    animation-name: fade-in2;
+    transition: opasity 2s;
+    animation-duration: 2s;
+    
+}
+.resultBox
+{
+    font-family: arial;
+    margin-bottom: 20px;
+    animation-name: fade-in2;
+    transition: opasity 2s;
+    animation-duration: 2200ms;
+}
+.inputArea
+{
+    animation-name: fade-in2;
+    transition: opasity 2s;
+    animation-duration: 2400ms;
+}
+#blink-animation
+{
+    margin-top: 5px;
+    font-size: 12px;
+    color: red;
+    animation: blink 1s;
+    transition: opasity 1s;
+    animation-duration: 400ms;
+    animation-iteration-count: 3;
+}
+ul
+{
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+ul li
+{
+    font-family: arial;
+    list-style: none;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+    font-size: 18px;
+    animation-name: slide-up;
+    animation-duration: 500ms;
+    color: black;
+    transition: color 2500ms;
+    animation-timing-function: ease-in-out;
+}
+ul li.checked
+{
+    color: #555;
+    text-decoration: line-through;
+
+}
+ul li span
+{
+    font-size: 17px;
+    margin-left: 10px;
+    background-position: center;
+    position: absolute;
+    background: #e5e9f1;
+    border-radius: 5px;
+}
+ul li span:hover
+{
+    background: darkgray;
+}
+
+@keyframes slide-down 
+{
+    0% {
+      transform: translateY(-150px);
+    }
+
+    50% {
+      transform: translateY(35px);
+    }
+
+    100% {
+      transform: translateY(5px);
+    }
+}
+@keyframes fade-in
+{
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+@keyframes fade-in2
+{
+    0%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+@keyframes blink
+{
+    0%
+    {
+        opacity: 1;
+    }
+    50%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+@keyframes slide-up 
+{
+    0% 
+    {
+      transform: translateY(35px);
+    }
+    50% 
+    {
+      transform: translateY(0px);
+    }
+}
