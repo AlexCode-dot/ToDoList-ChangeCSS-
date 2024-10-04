@@ -36,6 +36,10 @@ h2
     animation-duration: 2200ms;
     font-size: 23px;
 }
+#task-count
+{
+    margin-right: 5px;
+}
 .inputArea
 {
     animation-name: fade-in2;
