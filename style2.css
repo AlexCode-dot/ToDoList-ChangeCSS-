@@ -1,11 +1,11 @@
 body
 {
     height: 100vh;
-    background: linear-gradient(rgb(230, 209, 209), rgb(219, 123, 137));
+    background: linear-gradient(pink, salmon);
 }
 .container
 {
-   width:35%;
+   width:45%;
    margin: auto;
    background-color: white;
    padding-top: 15px;
@@ -15,6 +15,7 @@ body
    animation-duration: 1s;
    animation-fill-mode: forwards;
    transition: opasity 2s;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 h2
 {
@@ -43,11 +44,11 @@ h2
 }
 #input-value
 {
-    font-size: 30px;
+    font-size: 25px;
 }
 #add
 {
-    font-size: 30px;
+    font-size: 25px;
 }
 #blink-animation
 {
