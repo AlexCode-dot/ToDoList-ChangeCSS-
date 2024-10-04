@@ -50,6 +50,10 @@ h2
 {
     font-size: 30px;
 }
+#input-value:focus
+{
+    outline: 1px ridge blue;
+}
 #add
 {
     font-size: 30px;
