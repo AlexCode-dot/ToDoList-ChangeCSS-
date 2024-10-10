@@ -61,7 +61,8 @@ h2
 #blink-animation
 {
     margin-top: 5px;
-    font-size: 23px;
+    font-size: 21px;
+    font-family: Arial;
     font-style: italic;
     color: red;
     animation: blink 1s;
@@ -101,12 +102,14 @@ ul li span
     margin-left: 10px;
     background-position: center;
     position: absolute;
-    background: #e5e9f1;
     border-radius: 5px;
+    cursor: pointer;
+    color: transparent;
+    text-shadow: 0 0 0 rgb(187, 182, 182);
 }
 ul li span:hover
 {
-    background: darkgray;
+    text-shadow: 0 0 0 rgb(74, 70, 70);
 }
 
 @keyframes slide-down 
