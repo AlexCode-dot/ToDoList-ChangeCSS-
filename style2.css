@@ -87,8 +87,12 @@ ul li
     animation-name: slide-up;
     animation-duration: 500ms;
     color: black;
-    transition: color 2500ms;
+    transition: color 1500ms;
     animation-timing-function: ease-in-out;
+}
+ul li:hover
+{
+    text-decoration: line-through;
 }
 ul li.checked
 {
